@@ -26,7 +26,7 @@ window.addEventListener('scroll', () => {
 });
 
 // ===== Active nav link highlighting =====
-const sections = document.querySelectorAll('.section, #hero');
+const sections = document.querySelectorAll('.section, #hero, .project-banner');
 const navItems = document.querySelectorAll('.nav-links a');
 
 const observerOptions = {
@@ -52,7 +52,7 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => observer.observe(section));
 
 // ===== Scroll animations =====
-const fadeElements = document.querySelectorAll('.card, .criteria-group, .eng-item, .impact-card, .gallery-item, .team-member');
+const fadeElements = document.querySelectorAll('.card, .criteria-group, .eng-item, .impact-card, .gallery-item, .team-member, .profile-card, .alt-card, .stat');
 
 fadeElements.forEach(el => el.classList.add('fade-in'));
 
