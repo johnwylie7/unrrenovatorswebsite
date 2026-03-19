@@ -388,7 +388,8 @@ ul {
 /* ===== Project Banner ===== */
 .project-banner {
     position: relative;
-    background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 50%, var(--navy-light) 100%);
+    background: linear-gradient(135deg, rgba(18,30,51,0.82) 0%, rgba(27,42,74,0.78) 50%, rgba(37,58,94,0.75) 100%),
+                url('images/project-rendering.png') center/cover no-repeat;
     color: var(--white);
     text-align: center;
     overflow: hidden;
@@ -861,6 +862,16 @@ ul {
 .gallery-item img:hover {
     transform: scale(1.02);
     box-shadow: var(--shadow-lg);
+}
+
+.gallery-featured {
+    grid-column: 1 / -1;
+}
+
+.gallery-featured img {
+    aspect-ratio: 21/9;
+    object-fit: cover;
+    object-position: center 60%;
 }
 
 .placeholder-box {
